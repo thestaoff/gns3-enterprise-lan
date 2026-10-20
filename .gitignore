@@ -1,0 +1,10 @@
+*.qcow2
+*.img
+*.image
+*.pcap
+*.pcapng
+*.lock
+project-files/dynamips/ilt_*
+project-files/**/dynamips_*_stdout.txt
+.DS_Store
+Thumbs.db
