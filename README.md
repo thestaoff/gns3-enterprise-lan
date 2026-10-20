@@ -33,20 +33,20 @@ A GNS3 network simulation of a segmented enterprise LAN using VLANs, Router-on-a
 
 ## Repository contents
 
-- `enterprise-lan.gns3project`: portable GNS3 project archive
 - `configs/R1.cfg`: distribution-router startup configuration
 - `configs/R2.cfg`: OSPF-peer startup configuration
 - `configs/vpcs/`: VPCS startup files
 
 ## Open the lab
 
-1. Install GNS3.
-2. Import compatible Cisco router appliances locally.
-3. Open `enterprise-lan.gns3project` from GNS3.
-4. Resolve any missing appliance templates when prompted.
-5. Start the nodes and use the included configurations as references.
+1. Install GNS3 and import compatible router appliances locally.
+2. Create two routers, two Ethernet switches, and four VPCS nodes.
+3. Connect the devices according to the topology and addressing plan above.
+4. Apply `configs/R1.cfg` and `configs/R2.cfg` to the routers.
+5. Apply the startup files from `configs/vpcs/` to the corresponding clients.
+6. Start the nodes and run the verification checks below.
 
-Cisco IOS images are not included. They must be supplied separately under the applicable license.
+Cisco IOS images and the local GNS3 runtime archive are not included. Appliance images must be supplied separately under the applicable license.
 
 ## Verification targets
 
